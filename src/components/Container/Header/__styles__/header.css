@@ -1,0 +1,42 @@
+header {
+	top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(3px);
+}
+button.mobile-nav {
+  background: transparent;
+  border: none;
+}
+a.header-menu {
+	transition: all .3s ease-in-out;
+	text-decoration: none;
+}
+a.header-menu:hover {
+	color: var(--green);
+}
+span.icon {
+	font-size: 2rem;
+}
+div.gap-5px {
+	gap: 50px;
+}
+.active-tab {
+  position: relative;
+}
+.active-tab{
+  color: var(--green);
+}
+.active-tab::before {
+  display: block;
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  background: var(--green);
+  transform: translate(-50%, 0);
+}
