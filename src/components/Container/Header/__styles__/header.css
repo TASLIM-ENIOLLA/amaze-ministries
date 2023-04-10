@@ -12,6 +12,7 @@ button.mobile-nav {
 a.header-menu {
 	transition: all .3s ease-in-out;
 	text-decoration: none;
+  font-size: 14px;
 }
 a.header-menu:hover {
 	color: var(--green);
@@ -35,7 +36,7 @@ div.gap-5px {
   height: 6px;
   border-radius: 10px;
   position: absolute;
-  top: 110%;
+  top: 100%;
   left: 50%;
   background: var(--green);
   transform: translate(-50%, 0);

@@ -30,12 +30,12 @@
       }
     }}
   >
-    <div class = 'col'>
+    <div class = 'col px-0'>
       <input
         type = 'text'
         id = 'search-input'
         bind:value = {searchValue}
-        class = 'd-block w-100 py-2'
+        class = 'd-block w-100 py-2 px-3'
         placeholder = {placeholder || 'Type here to search...'}
       />
     </div>

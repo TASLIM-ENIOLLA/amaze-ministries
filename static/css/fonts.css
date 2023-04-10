@@ -42,3 +42,9 @@
 	src: url(../fonts/montserrat/Montserrat-Black.ttf);
 }
 /* Montserrat Fonts */
+/* Open Sans Fonts */
+@font-face{
+	font-family: OpenSans;
+	src: url(../fonts/Open-Sans.woff2);
+}
+/* Open Sans Fonts */

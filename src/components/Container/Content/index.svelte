@@ -1,13 +1,3 @@
-<script context = 'module'>
-	function reMapArticleToPost (articles) {
-		return articles.map(({author, content, description, publishedAt, source, title}) => ({
-			title, author, content, description,
-			timestamp: publishedAt,
-			tags: Object.values(source)
-		}))
-	}
-</script>
-
 <script>
 	import PostList from './Posts/List/index.svelte'
 	import Pagination from './Pagination/index.svelte'
@@ -18,6 +8,7 @@
 	export let pageSize = 5
 
 	let page
+	let pagesCols
 	let totalRecords
 </script>
 
@@ -25,11 +16,13 @@
 	<PostList
 		page = {page}
 		pageSize = {pageSize}
-		onPostsLoaded = {(props) => console.log(props)}
+		pagesCols = {pagesCols}
+		onPostsLoaded = {({totalRecords: total}) => totalRecords = 100}
 	/>
 	<Pagination
 		pageSize = {pageSize}
-		totalRecords = {totalRecords}
+		totalRecords = {undefined}
+		onPagination = {({pagesCols: p}) => pagesCols = p}
 		onPageNumberChange = {({pageNumber}) => page = pageNumber}
 	/>
 {/if}

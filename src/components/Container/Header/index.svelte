@@ -33,7 +33,9 @@
 							      ? 'active-tab '
 							      : 'text-muted'
 							    } header-menu text-capitalize`}
-							  >{name}</a>
+							  >
+                  {name}
+                </a>
 							{/each}
             </div>
           </div>

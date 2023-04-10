@@ -6,9 +6,9 @@
 
 *{
     font-size: 12px;
-    font-family: MontserratRegular;
+    font-family: RobotoRegular;
 }
-body{
+body {
 	scroll-behavior: smooth;
 }
 a, span {
@@ -19,5 +19,5 @@ a, span {
 }
 .bold {
 	font-weight: 900;
-    font-family: MontserratBold;
+    font-family: RobotoBold;
 }
