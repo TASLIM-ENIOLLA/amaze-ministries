@@ -19,9 +19,11 @@
 		pagesCols = {pagesCols}
 		onPostsLoaded = {({totalRecords: total}) => totalRecords = 100}
 	/>
+{/if}
+{#if totalRecords}
 	<Pagination
 		pageSize = {pageSize}
-		totalRecords = {undefined}
+		totalRecords = {totalRecords}
 		onPagination = {({pagesCols: p}) => pagesCols = p}
 		onPageNumberChange = {({pageNumber}) => page = pageNumber}
 	/>
